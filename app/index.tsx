@@ -9,8 +9,8 @@ import GenderFilterContext from '@/src/contexts/GenderFilterContext';
 import { SQLiteProvider } from 'expo-sqlite';
 import { LogBox } from 'react-native';
 
-// SplashScreen.preventAutoHideAsync();
-// setTimeout(SplashScreen.hideAsync, 2000);
+SplashScreen.preventAutoHideAsync();
+setTimeout(SplashScreen.hideAsync, 4000);
 
 export default function Index() {
   const navigation = useNavigation();
