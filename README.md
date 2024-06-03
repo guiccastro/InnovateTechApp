@@ -8,36 +8,49 @@ O projeto foi criado usando:
 - Axios: Comunicação com API.
 - Expo SQLite: Acesso ao Banco de Dados.
 
-## Instalação
+# Como rodar o aplicativo
 
-Primeiro será necessário clonar ou baixar este repositório.
+Existem duas maneiras de rodar o aplicativo InnovateTechApp, através de um .apk ou de um servidor do Expo. 
 
-Em seguida, será necessário baixar o Node.js, o qual pode ser encontrado [aqui](https://nodejs.org/en).
 
-Com o projeto e o Node baixados, abra um terminal dentro da pasta do Projeto.
+## Baixando o .apk
+A maneira *"fácil"* é baixando o **.apk** do projeto através deste [link](https://expo.dev/accounts/guiccastro/projects/InnovateTechApp/builds/fae258cb-c043-4c24-a087-be72cde969e3) e instalar ele onde você quiser, podendo ser em um emulador ou em um dispositivo físico.
+
+## Servidor Expo
+
+A maneira *"difícil"* envolve rodar um servidor do Expo localmente, para que juntamente do aplicativo do Expo, você consiga rodar o InnovateTechApp no seu dispositivo. Abaixo segue as instruções caso queira seguir por este caminho:
+
+### 1. Clonar ou baixar o repositório
+Primeiramente, será necessário ter o projeto no seu computador. Você pode clonar ele através do GitHub, ou apenas baixá-lo manualmente.
+
+### 2. Baixar o Node.js
+Para poder baixar as dependências do projeto e rodar o servidor Expo, será necessário ter o Node.js instalado no seu computador. Caso não tenha, ele pode ser baixado [aqui](https://nodejs.org/en). 
+
+**IMPORTANTE:** Durante a instalação do Node.js, exite um checkbox perguntande se você quer instalar outros pacotes do Node.js, **marque esta opção**. E no final da instalação, **reinicie o seu computador**, caso contrário, o terminal não irá reconhecer alguns comandos que iremos usar.
+
+### 3. Executar servidor Expo
+Com o projeto já no seu computador, você precisar abrir um terminal dentro da pasta do projeto. Você pode clicar com o botão direito na paste e selecionar a opção `Abrir no terminal`, ou navegar através do terminal até a pasta do projeot:
 
 ```bash
-InnovateTechApp>
+cd pasta_do_projeto
 ```
 
-Em seguida, use o comando `npm install` para que todas as dependências do projeto sejam baixadas.
+Em seguida execute o comando `npm install`. Ele irá instalar todas as dependências do projeto:
 
 ```bash
-InnovateTechApp> npm install
+npm install
 ```
 
-Pronto! O projeto está pronto para ser executado.
-
-## Como usar
-
-Para executar o projeto, basta dar o comando `npx expo start` que o Expo compilará o projeto e o deixará rodando.
+Após as intalações das depenências estiverem completas, é só executar o comando `npx expo start` para iniciar o servidor do Expo:
 
 ```bash
-InnovateTechApp> npx expo start
+npx expo start
 ```
 
-Você verá que um QRCode foi gerado. Para testar o aplicativo em Android basta baixar o app [Expo da PlayStore](https://play.google.com/store/apps/details?id=host.exp.exponent&pcampaignid=web_share).
+Você verá que um QRCode será gerado. Para poder ler o QRCode, baixa o aplicativo do [Expo na PlayStore](https://play.google.com/store/apps/details?id=host.exp.exponent&pcampaignid=web_share). Ao abrir o aplicativo do Expo, selecione a opção `Scan QR code` e escaneie o QRCode que foi gerado no seu terminal. 
 
-Ao abrir o app Expo, clique em `Scan QR code` para ler o QRCode que foi gerado no seu terminal.
+Pronto! O aplicativo do InnovateTechApp estará rodando normalmente.
 
-Ele automaticamente irá abrir o app InnovatecTech e você poderá usá-lo normalmente.
+# Observações
+
+O aplicativo foi testado apenas na plataforma Android, portanto, recomendo testá-lo em um Android também.
