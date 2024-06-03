@@ -7,14 +7,16 @@ import { useEffect, useState } from 'react';
 import { THEMES } from '@/src/styles/themes';
 import GenderFilterContext from '@/src/contexts/GenderFilterContext';
 import { SQLiteProvider } from 'expo-sqlite';
+import { LogBox } from 'react-native';
 
-SplashScreen.preventAutoHideAsync();
-setTimeout(SplashScreen.hideAsync, 2000);
+// SplashScreen.preventAutoHideAsync();
+// setTimeout(SplashScreen.hideAsync, 2000);
 
 export default function Index() {
   const navigation = useNavigation();
   useEffect(() => {
     navigation.setOptions({ headerShown: false });
+    LogBox.ignoreLogs(['In React 18, SSRProvider is not necessary and is a noop. You can remove it from your app.']);
   }, []);
 
   const [genderFilter, setGenderFilter] = useState("")
