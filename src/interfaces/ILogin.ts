@@ -1,0 +1,3 @@
+interface ILogin {
+    uuid: string
+}
