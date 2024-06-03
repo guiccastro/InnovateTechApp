@@ -6,7 +6,7 @@ O projeto foi criado usando:
 - [Expo](https://expo.dev/): Criação e gerenciamento do projeto.
 - [NativeBase](https://nativebase.io/): Componentes para React Native.
 - Axios: Comunicação com API.
-- Expo SQLite: Acesso ao Banco de Dados.
+- [Expo SQLite](https://docs.expo.dev/versions/latest/sdk/sqlite/): Acesso ao Banco de Dados.
 
 # Como rodar o aplicativo
 
@@ -14,7 +14,7 @@ Existem duas maneiras de rodar o aplicativo InnovateTechApp, através de um .apk
 
 
 ## Baixando o .apk
-A maneira *"fácil"* é baixando o **.apk** do projeto através deste [link](https://expo.dev/accounts/guiccastro/projects/InnovateTechApp/builds/fae258cb-c043-4c24-a087-be72cde969e3) e instalar ele onde você quiser, podendo ser em um emulador ou em um dispositivo físico.
+A maneira *"fácil"* é baixando o **.apk** do projeto através deste [link](https://expo.dev/accounts/guiccastro/projects/InnovateTechApp/builds/8147f27c-5024-480b-b2fa-c193b7ad24ea) e instalar ele onde você quiser, podendo ser em um emulador ou em um dispositivo físico.
 
 ## Servidor Expo
 
