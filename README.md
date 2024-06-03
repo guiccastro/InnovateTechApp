@@ -54,3 +54,13 @@ Pronto! O aplicativo do InnovateTechApp estará rodando normalmente.
 # Observações
 
 O aplicativo foi testado apenas na plataforma Android, portanto, recomendo testá-lo em um Android também.
+
+Caso tenha ficado alguma dúvida ou teve algum problema sobre como rodar o projeto, fique à vontade para entrar em contato comigo que ficarei feliz em ajudar.
+
+## Decisões de Projeto
+- A lista de estudantes carrega 20 estudantes por vez da API.
+- A primeira página (os 20 primeiros estudantes da lista), são carregados do banco de dados. Caso não tenham sido carregados ainda, são baixados da API.
+- Ao clicar em um estudante, uma Modal é aberta com todas as informações completas do estudante.
+- É possível pesquisar na lista por nome do estudante.
+- É possível filtrar a lista por gênero.
+- Um gerenciador de estados (useContext) foi usado na seleção de filtragem por gênero.
